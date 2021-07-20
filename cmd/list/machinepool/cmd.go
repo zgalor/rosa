@@ -159,7 +159,7 @@ func run(_ *cobra.Command, _ []string) {
 	writer := tabwriter.NewWriter(os.Stdout, 0, 0, 2, ' ', 0)
 
 	fmt.Fprintf(writer, "ID\tAUTOSCALING\tREPLICAS\tINSTANCE TYPE\tLABELS\t\tTAINTS\t\tAVAILABILITY ZONES"+
-		"\t\tSPOT INSTANCE\n")
+		"\t\tSPOT INSTANCES\n")
 	for _, machinePool := range machinePools {
 		fmt.Fprintf(writer, "%s\t%s\t%s\t%s\t%s\t\t%s\t\t%s\t\t%s\n",
 			machinePool.ID(),
